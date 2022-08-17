@@ -2,13 +2,13 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class Employer {
+public class Employer extends JobField{
 
     private int id;
     private static int nextId = 1;
-    private String value;
+    /*private String value;
 
-    public Employer() {
+    /*public Employer() {
         id = nextId;
         nextId++;
     }
@@ -16,14 +16,20 @@ public class Employer {
     public Employer(String value) {
         this();
         this.value = value;
+    }*/
+
+    public Employer(String value){
+        super(value);
+        id = nextId;
+        nextId++;
     }
 
     // Custom toString, equals, and hashCode methods:
 
-    @Override
+   /* @Override
     public String toString() {
         return value;
-    }
+    }*/
 
     @Override
     public boolean equals(Object o) {  // Two objects are equal if they have the same id.
@@ -44,12 +50,12 @@ public class Employer {
         return id;
     }
 
-    public String getValue() {
+    /*public String getValue() {
         return value;
     }
 
     public void setValue(String value) {
         this.value = value;
-    }
+    }*/
 
 }
