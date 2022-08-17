@@ -3,17 +3,17 @@ package org.launchcode.techjobs.oo;
 public abstract class JobField {
 
     private String value;
-    private int id;
-    private int nextId = 1;
+    //private int id;
+    //private int nextId = 1;
 
     //constructors
-    public JobField() {
+    /*public JobField() {
         id = nextId;
         nextId++;
-    }
+    }*/
 
     public JobField(String value) {
-        this();
+        //this();
         this.value = value;
     }
 
@@ -25,9 +25,9 @@ public abstract class JobField {
     //getters and setters
 
 
-    public int getId() {
+   /* public int getId() {
         return id;
-    }
+    }*/
 
     public String getValue() {
         return value;
